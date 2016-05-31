@@ -21,24 +21,24 @@ Install Java & Maven on your local machine
 Local machine with browser name (ie / chrome / firefox / safari)
 
 - Test with Google Chrome (Mac / Windows for machineType):
-> mvn test -DsiteUrl=http://www.google.com -DbrowserName="googlechrome" -DmachineType="mac"
+> ./mvnw test -DsiteUrl=http://www.google.com -DbrowserName="googlechrome" -DmachineType="mac"
 
 - Test with Firefox (Mac / Windows for machineType):
-> mvn test -DsiteUrl=http://www.google.com -DbrowserName="firefox" -DmachineType="mac"
+> ./mvnw test -DsiteUrl=http://www.google.com -DbrowserName="firefox" -DmachineType="mac"
 
 - Test with IE (Windows Only):
-> mvn test -DsiteUrl=http://www.google.com -DbrowserName="ie"
+> ./mvnw test -DsiteUrl=http://www.google.com -DbrowserName="ie"
 
 - Test with Safari (After install Safari extension, see /drivers/README.md):
-> mvn test -DsiteUrl=http://www.google.com -DbrowserName="safari"
+> ./mvnw test -DsiteUrl=http://www.google.com -DbrowserName="safari"
 
 Remote Webdriver:
 
 - Testingbot (You can pass through Bamboo build variable for api key)
-> mvn test -DsiteUrl=http://www.google.com -DenvName="remote" -DremoteWebDriver="http://<testingbot api key>@hub.testingbot.com:4444/wd/hub"
+> ./mvnw test -DsiteUrl=http://www.google.com -DenvName="remote" -DremoteWebDriver="http://<testingbot api key>@hub.testingbot.com:4444/wd/hub"
 
 - SauceLabs (You can pass through Bamboo build variable for api key)
-> mvn test -DsiteUrl=http://www.google.com -DenvName="remote" -DremoteWebDriver="http://<saucelabs api key>@ondemand.saucelabs.com:80/wd/hub"
+> ./mvnw test -DsiteUrl=http://www.google.com -DenvName="remote" -DremoteWebDriver="http://<saucelabs api key>@ondemand.saucelabs.com:80/wd/hub"
 
 = WebDriver Update =
 See README inside /drivers folder
